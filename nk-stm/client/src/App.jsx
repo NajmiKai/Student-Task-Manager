@@ -16,7 +16,7 @@ function Layout() {
 
   const location = useLocation()
 
-  return user ? (
+  return user? (
       <div className='w-full h-screen flex flex-col md:flex-row'>
         <div className='w-1/5 h-screen bg-white sticky top-0 hidden md:block'>
           {/* <Sidebar/> */}
@@ -54,7 +54,7 @@ function App() {
           <Route path='/trashed' element={<Trash />} />
           <Route path='/task/:id' element={<TaskDetails />} />
         </Route>
-        <Route path='/log-in' element={<Login />} />
+        <Route path='/log-in' element={<Login/>} />
       </Routes>
 
       <Toaster richColors />
